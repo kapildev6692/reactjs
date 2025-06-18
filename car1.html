@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Cards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      padding: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>Card One</h3>
+      <p>This is a simple card description for card one. Clean and responsive.</p>
+    </div>
+    <div class="card">
+      <h3>Card Two</h3>
+      <p>This card also contains a short message. It matches the overall layout.</p>
+    </div>
+    <div class="card">
+      <h3>Card Three</h3>
+      <p>Use cards like these to showcase services, features, or team members.</p>
+    </div>
+    <div class="card">
+      <h3>Card Four</h3>
+      <p>The fourth card wraps up the layout. Add links, buttons, or icons as needed.</p>
+    </div>
+  </div>
+
+</body>
+</html>
